@@ -794,6 +794,7 @@ class StreamGear:
             )
             # clean everything at exit?
             output_params["-remove_at_exit"] = self.__params.pop("-remove_at_exit", 0)
+            output_params["-hls_delete_threshold"] = self.__params.pop("-hls_delete_threshold", 2)
         else:
             # enforce "contain all the segments"
             output_params["-hls_list_size"] = 0
