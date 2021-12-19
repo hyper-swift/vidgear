@@ -790,7 +790,7 @@ class StreamGear:
             output_params["-hls_init_time"] = self.__params.pop("-hls_init_time", 4)
             output_params["-hls_time"] = self.__params.pop("-hls_time", 6)
             output_params["-hls_flags"] = self.__params.pop(
-                "-hls_flags", "delete_segments+discont_start+split_by_time"
+                "-hls_flags", "delete_segments+discont_start"
             )
             # clean everything at exit?
             output_params["-remove_at_exit"] = self.__params.pop("-remove_at_exit", 0)
